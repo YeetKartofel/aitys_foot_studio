@@ -2,125 +2,120 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aitys_foot_studio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Playfair Display', serif;
-            background-color: #f5f5dc;
-            color: #333;
-            font-size: 18px;
-            line-height: 1.8;
-        }
-        header {
-            background-color: #e0d7c6;
-            padding: 30px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            background-color: #d6cfc2;
-            padding: 15px;
-        }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        section {
-            display: none;
-            padding: 30px;
-        }
-        section.active {
-            display: block;
-        }
-        img {
-            width: 100%;
-            max-width: 700px;
-            height: auto;
-            margin: 20px 0;
-            border-radius: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #e0d7c6;
-            font-size: 16px;
-        }
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
-    <script>
-        function showSection(id) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => section.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-        }
-        window.onload = () => showSection('onas');
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aitys Foot Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5dc;
+      color: #333;
+      font-size: 22px;
+      line-height: 1.6;
+      text-align: center;
+    }
+    header {
+      background-color: #e0d7c6;
+      padding: 40px 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      background-color: #d6cfc2;
+      padding: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    section {
+      display: none;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section.active {
+      display: block;
+    }
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+    footer {
+      background-color: #e0d7c6;
+      padding: 20px;
+      font-size: 20px;
+    }
+  </style>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+    window.onload = () => showSection('onas');
+  </script>
 </head>
 <body>
-    <header>
-        <h1>Witamy w aitys_foot_studio</h1>
-        <p>Doświadcz głębokiego relaksu i odnowy dzięki tradycyjnym kazachstańskim masażom stóp</p>
-    </header>
-    <nav>
-        <a onclick="showSection('onas')">O nas</a>
-        <a onclick="showSection('oferta')">Co oferujemy</a>
-        <a onclick="showSection('opinie')">Opinie</a>
-        <a onclick="showSection('kontakt')">Kontakt</a>
-    </nav>
+  <header>
+    <h1>Aitys Foot Studio</h1>
+    <p>Nowoczesne Kazachstańskie Masaże Stóp</p>
+  </header>
+  <nav>
+    <a onclick="showSection('onas')">O nas</a>
+    <a onclick="showSection('oferta')">Co oferujemy</a>
+    <a onclick="showSection('opinie')">Opinie</a>
+    <a onclick="showSection('kontakt')">Kontakt</a>
+  </nav>
 
-    <section id="onas">
-        <h2>O nas</h2>
-        <p>
-            aitys_foot_studio to miejsce stworzone z pasji do zdrowia i harmonii. Nasz zespół specjalistów oferuje unikalne doświadczenia relaksacyjne, bazując na wielowiekowej tradycji Kazachstańskich technik masażu. Naszą misją jest przywrócenie naturalnej równowagi ciała i ducha poprzez precyzyjne techniki refleksologii stóp. Każdy klient jest traktowany indywidualnie i z najwyższą troską.
-        </p>
-        <img src="https://thaibalispa.pl/wp-content/uploads/2022/10/stopy2-scaled.jpg" alt="Masaż stóp 1">
-    </section>
+  <section id="onas">
+    <h2>O nas</h2>
+    <p>
+      Aitys Foot Studio to wyjątkowe miejsce, które łączy tradycję Kazachstanu z nowoczesnym podejściem do zdrowia i relaksu. Nasz zespół pasjonatów oferuje masaże stóp, które wspierają regenerację ciała i umysłu. Każdy zabieg to indywidualna podróż ku lepszemu samopoczuciu.
+    </p>
+    <img src="https://thaibalispa.pl/wp-content/uploads/2022/10/stopy2-scaled.jpg" alt="Masaż stóp 1" />
+  </section>
 
-    <section id="oferta">
-        <h2>Co oferujemy</h2>
-        <p>
-            Nasze zabiegi to połączenie starożytnej wiedzy z nowoczesnym podejściem do wellness. Oferujemy kompleksową terapię stóp, która poprawia krążenie, redukuje stres i wspomaga regenerację całego organizmu. Niezależnie od tego, czy chcesz się zrelaksować po ciężkim dniu, czy szukasz skutecznego sposobu na złagodzenie bólu – mamy coś dla Ciebie.
-        </p>
-        <ul>
-            <li>Kazachstański masaż refleksologiczny z elementami akupresury</li>
-            <li>Terapie z użyciem naturalnych olejków i ciepłych kompresów</li>
-            <li>Rytuały relaksacyjne i odświeżające kąpiele stóp</li>
-        </ul>
-        <img src="https://moonlightspa.pl/wp-content/uploads/2022/10/ffd84c_8_-1024x647.webp" alt="Masaż stóp 2">
-    </section>
+  <section id="oferta">
+    <h2>Co oferujemy</h2>
+    <p>
+      Oferujemy trzy wyjątkowe masaże stóp, które łączą tradycję Kazachstanu z nowoczesnymi technikami relaksacyjnymi.
+    </p>
+    <p><strong>Masaż Regeneracyjny</strong> – wspomaga krążenie krwi, idealny po długim dniu. Cena: 120 zł</p>
+    <p><strong>Masaż Relaksacyjny</strong> – redukuje stres i napięcie mięśni. Cena: 150 zł</p>
+    <p><strong>Masaż Energetyzujący</strong> – pobudza organizm, przywraca lekkość kroku. Cena: 170 zł</p>
+    <img src="https://moonlightspa.pl/wp-content/uploads/2022/10/ffd84c_8_-1024x647.webp" alt="Masaż stóp 2" />
+  </section>
 
-    <section id="opinie">
-        <h2>Opinie klientów</h2>
-        <blockquote>„To było niesamowite przeżycie. Czułam się lekko jak piórko i całkowicie zrelaksowana.” – Anna K.</blockquote>
-        <blockquote>„Świetne miejsce! Profesjonalna obsługa i wyjątkowa atmosfera. Polecam każdemu, kto szuka chwili dla siebie.” – Marek W.</blockquote>
-        <blockquote>„Masaż stóp w aitys_foot_studio to nie tylko relaks, to prawdziwa podróż do wnętrza siebie.” – Klaudia Z.</blockquote>
-        <img src="https://tajskiraj.pl/wp-content/uploads/2023/01/masaz_stop_nog_warszawa.jpeg" alt="Masaż stóp 3">
-    </section>
+  <section id="opinie">
+    <h2>Opinie klientów</h2>
+    <p>
+      „Profesjonalizm i niesamowita atmosfera – gorąco polecam!” – Anna <br />
+      „Cudowne miejsce, wracam regularnie na zabiegi.” – Marek <br />
+      „Masaż stóp w Aitys Foot Studio to prawdziwy relaks.” – Klaudia
+    </p>
+    <img src="https://tajskiraj.pl/wp-content/uploads/2023/01/masaz_stop_nog_warszawa.jpeg" alt="Masaż stóp 3" />
+  </section>
 
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <p>Masz pytania lub chcesz umówić się na wizytę? Skontaktuj się z nami!</p>
-        <p><strong>Email:</strong> kontakt@aitysfootstudio.pl</p>
-        <p><strong>Telefon:</strong> +48 123 456 789</p>
-        <p><strong>Adres:</strong> ul. Stopowa 7, Warszawa</p>
-    </section>
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Skontaktuj się z nami, aby umówić wizytę lub uzyskać więcej informacji.</p>
+    <p>Email: kontakt@aitysfootstudio.pl</p>
+    <p>Telefon: +48 123 456 789</p>
+    <p>Adres: ul. Stopowa 7, Warszawa</p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 aitys_foot_studio - Wszystkie prawa zastrzeżone</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Aitys Foot Studio - Wszystkie prawa zastrzeżone</p>
+  </footer>
 </body>
 </html>
